@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 /**
  * main - prints numbers of base 16 in lowercase
  * followed by new line
@@ -11,7 +9,7 @@ int main(void)
 {
 	int n;
 	char ch;
-	
+
 	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
