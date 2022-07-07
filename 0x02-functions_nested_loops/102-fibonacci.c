@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long count, i, j k;
+	unsigned long count, i, j, k;
 
 	i = 0;
 	j = l;
@@ -17,6 +17,8 @@ int main(void)
 		i = j;
 		j = k;
 		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
 		else
 		{
 			printf(",");
