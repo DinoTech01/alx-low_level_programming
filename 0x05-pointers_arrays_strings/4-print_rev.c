@@ -8,7 +8,7 @@
  */
 
 void print_rev(char *s)
-
+{
 	int fcounter = 0;
 
 	int i, n;
