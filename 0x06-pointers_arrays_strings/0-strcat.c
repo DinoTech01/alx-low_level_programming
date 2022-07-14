@@ -15,7 +15,6 @@ char *_strcat(char *dest, char *src)
 	for(n = 0, n != '\0', n++)
 	{
 		[i + n] = n;
-		n++;
 	}
 	return (dest);
 }
