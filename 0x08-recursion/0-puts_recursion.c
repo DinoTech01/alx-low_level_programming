@@ -2,7 +2,7 @@
 
 /*
  * _puts_recursion - prints a string folowed by a new line
- * @s: string
+ * @s: The pointr variable to string s
  * Return: Always (0)
  */
 
