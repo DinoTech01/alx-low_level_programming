@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*
- * _puts_recursion - prints a string folowed by a new line
- * @s: The pointr variable to string s
- * Return: Always (0)
+/**
+ * _puts_recursion - function that prints a string,
+ * followed by a new line.
+ * @s: The pointer variable to string s
  */
 
 void _puts_recursion(char *s)
@@ -12,9 +12,9 @@ void _puts_recursion(char *s)
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
-		else
 	}
-		{
-			_putchar('\n')
-		}
+	else
+	{
+		_putchar('\n');
+	}
 }
