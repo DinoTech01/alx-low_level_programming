@@ -8,7 +8,6 @@
  *  @l: size of string
  *  Return: void
  */
-
 void _print(char *str, int l)
 {
 	int i, j;
@@ -33,9 +32,9 @@ void _print(char *str, int l)
  *  @num: string to multiply
  *  @num_index: last non NULL index of num
  *  @dest: destination of multiplication
- *  @dest_index: highest index to star
+ *  @dest_index: highest index to start addion
+ *  Return: pointer to dest, or NULL on failure
  */
-
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
 	int j, k, mul, mulrem, add, addrem;
@@ -61,13 +60,11 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	}
 	return (dest);
 }
-
 /**
  * check_for_digits - checks the arguments to ensure they are digits
  * @av: pointer to arguments
  * Return: 0 if digits, 1 if not
  */
-
 int check_for_digits(char **av)
 {
 	int i, j;
@@ -89,7 +86,6 @@ int check_for_digits(char **av)
  * @l: length of strinf
  * Return: void
  */
-
 void init(char *str, int l)
 {
 	int i;
@@ -105,14 +101,12 @@ void init(char *str, int l)
  *  @argv: argument vector
  *  Return: zero, or exit status of 98 if failure
  */
-
 int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
 	char *a;
 	char *t;
 	char e[] = "Error\n";
-
 	if (argc != 3 || check_for_digits(argv))
 	{
 		for (ti = 0; e[ti]; ti++)
