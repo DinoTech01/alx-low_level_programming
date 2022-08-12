@@ -1,11 +1,13 @@
 #include "3-calc.h"
 
 /**
- * get_op_func - compares the struct and proceed to operates.
- * @s: operator string.
- * Return: result.
+ * get_op_func - function pointer that selects the correct function to perform
+ * the operation asked by the user
+ * @s: the operator given by the user
+ *
+ * Return: pointer to the function that corresponds to the
+ * operator given as a parameter
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -16,15 +18,16 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int j;
 
-	i = 0;
+	j = 0;
 
-	while (i < 5)
+	while (ops[j].op)
 	{
-		if (*s == *ops[i].op)
-			return (ops[i].f);
-		i++;
+		if (strcmp(ops[j].op, s) == 0)
+			return (ops[j].f);
+		j++;
 	}
+
 	return (NULL);
 }
